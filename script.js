@@ -42,11 +42,10 @@ class Calculator {
                 this.actionDivide(this.value);
                 break;
             case '*':
-
+                this.actionMult(this.value);
                 break;
             case '-':
                 this.actionMinus(this.value);
-
                 break;
             case '+':
                 this.actionAdd(this.value);
@@ -87,6 +86,10 @@ class Calculator {
 
     actionDivide(value) {
         this.result = Number(this.result) / Number(this.value);
+        this.value = String(this.result);
+    }
+    actionMult(value) {
+        this.result = Number(this.result) * Number(this.value);
         this.value = String(this.result);
     }
 
