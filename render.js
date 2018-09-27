@@ -4,7 +4,7 @@ class Render {
         this.result = document.querySelector('#result');
     }
     setValue(value){
-        this.result.innerHTML = value;
+        this.result.innerHTML = value.slice(0,11);
     }
     setAction(value = '') {
         this.action.innerHTML = value;

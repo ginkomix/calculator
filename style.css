@@ -67,7 +67,7 @@ body {
     width: 50px;
     height: 40px;
     margin: 0px 4px;
-    font-size: .5em;
+    font-size: .4em;
 }
 .btn:active {
     transform: translate(0px, 3px);
